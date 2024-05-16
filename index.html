@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="w-75 mx-auto py-4">
+        <h1 class="mb-3">product mangement system</h1>
+        <div class="form-group mb-2">
+            <label for="productName" class="mb-2">productName</label>
+            <input type="text" id="productName" class="form-control">
+        </div>
+        <div class="form-group mb-2">
+            <label for="productPrice" class="mb-2">productPrice</label>
+            <input type="number" id="productPrice" class="form-control">
+        </div>
+        <div class="form-group mb-2">
+            <label for="productModel" class="mb-2">productModel</label>
+            <input type="text" id="productModel" class="form-control">
+        </div>
+        <div class="form-group mb-2">
+            <label for="productDesc" class="mb-2">productDesc</label>
+            <textarea name="productDesc" id="productDesc" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+        <button onclick="addProduct()" id="addProductBtn" class="btn btn-primary">Add Procuct</button>
+        <button onclick="updateProduct()" class="btn btn-warning d-none" id="updateProductBtn">update Procuct</button>
+
+    </div>
+    <div class="w-75 mx-auto py-4">
+        <input oninput="searchByName(this.value)" type="text" id="" class="form-control" placeholder="searchByName" >
+    </div>
+    <table class="table text-white text-center w-75 mx-auto">
+     <thead>
+        <th>index</th>
+        <th>productName</th>
+        <th>productPrice</th>
+        <th>productModel</th>
+        <th>productDesc</th>
+        <th>update</th>
+        <th>Delete</th>
+     </thead>
+     <tbody id="tBody">
+ 
+     </tbody>
+
+
+
+    </table>
+</div>
+
+
+
+<script src="./js/main.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
